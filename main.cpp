@@ -3,8 +3,7 @@
 #include"MarkerRecognizer.h"
 
 
-
-int ImgNum = 100;
+int ImgNum = 10;
 int gNowPos = 0;
 
 MarkerRecognizer m_recognizer;

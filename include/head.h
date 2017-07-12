@@ -8,6 +8,7 @@
 #include <sys/time.h>
 #include <errno.h>
 #include <iostream>
+#include<vector>
 #include"fflog.h"
 
 using namespace std;
@@ -15,7 +16,6 @@ using namespace cv;
 
 #define logg 0
 extern int gNowPos;
-//extern vector<PointLine> gLines;
 
 struct  PointCloud{
 	float x;
@@ -118,6 +118,7 @@ struct  PointLine{
 	
 };
 
+extern vector<PointLine> gLines;
 
 int light_extraction(Mat wrap_img, vector<Point3f>  & lightdotl);
 void reconstuct_3D(vector<Point3f>lightdotl,vector<Point3f>&xyz);
